@@ -16,6 +16,11 @@ This website is a test to recommend to the end-user what student group category 
   - `npm start`
     
 ## Contributing
-If you want to contribute to the project, you need to follow the guidelines for [Contributing](docs/CONTRIBUTING.md).
+If you want to contribute to the project, you need to follow the guidelines for [Contributing](.github/CONTRIBUTING.md).
 
-Also, remember to follow the templates when creating issues and pull requests. 
+Also, remember to follow the templates when creating issues and pull requests.
+
+## Preview and inspire
+You can preview the site in [this link](https://hitec.tecoding.org/).
+
+You can see the goal mock up for the project [here](https://www.figma.com/team_invite/redeem/9vkk7jy1CofzE9qdY6FGdB).
