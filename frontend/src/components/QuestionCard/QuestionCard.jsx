@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import './QuestionCard.scss'
 // Only testing purpose, delete for final build.
 const QUESTIONS = [
     {
@@ -121,7 +121,7 @@ function QuestionCard() {
     })
 
     return (
-        <div>
+        <div className={"QuestionCard"}>
             {/*--NAV--*/}
             <div>
                 {questionsNav}
