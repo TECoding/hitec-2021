@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import NavigationButtons from './../NavigationButtons/NavigationButtons.jsx'
 import './QuestionCard.scss'
 // Only testing purpose, delete for final build.
 const QUESTIONS = [
@@ -17,6 +18,12 @@ const QUESTIONS = [
             },
             {
                 text: "Answer 4"
+            },
+            {
+                text: "Answer 5"
+            },
+            {
+                text: "Answer 6"
             },
 
         ],
@@ -37,6 +44,12 @@ const QUESTIONS = [
             {
                 text: "Answer 4"
             },
+            {
+                text: "Answer 5"
+            },
+            {
+                text: "Answer 6"
+            },
 
         ],
         answerIndex: null
@@ -56,6 +69,12 @@ const QUESTIONS = [
             {
                 text: "Answer 4"
             },
+            {
+                text: "Answer 5"
+            },
+            {
+                text: "Answer 6"
+            },
 
         ],
         answerIndex: null,
@@ -74,6 +93,12 @@ const QUESTIONS = [
             },
             {
                 text: "Answer 4"
+            },
+            {
+                text: "Answer 5"
+            },
+            {
+                text: "Answer 6"
             },
 
         ],
@@ -129,7 +154,8 @@ function QuestionCard() {
             {/*--QUESTION--*/}
             <div className="question-content">
                 {/*QUESTION --TEXT--*/}
-                <h2>{currentQuestion.text}</h2>
+                <h2>Pregunta {currentQuestion.id + 1}</h2>
+                <p>{currentQuestion.text}</p>
                 {/*QUESTION --OPTIONS--*/}
                 <div className={"options-content"}>
                     {questionOptions}
@@ -137,8 +163,8 @@ function QuestionCard() {
             </div>
             {/*--BUTTONS--*/}
             <div>
-                {currentStep !== 0 ? <p onClick={handlePrevQuestionClick}>Anterior</p> : ""}
-                {currentStep !== QUESTIONS.length - 1 ? <p onClick={handleNextQuestionClick}>Siguiente</p> : ""}
+                <NavigationButtons handlePrevQuestionClick={handlePrevQuestionClick}
+                                   handleNextQuestionClick={handleNextQuestionClick}/>
             </div>
         </div>
     );
