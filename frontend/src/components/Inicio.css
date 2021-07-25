@@ -1,0 +1,19 @@
+.Inicio {
+  display: inline-flex;
+  background-color: transparent;
+  width: 40%;
+  height: 40%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.Inicio .content-wrapper {
+  background-color: transparent;
+  width: fit-content;
+}
+
+.Inicio .content-wrapper p {
+  font-size: 50px;
+  font-weight: 700;
+}

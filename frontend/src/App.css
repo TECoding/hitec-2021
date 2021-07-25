@@ -1,0 +1,67 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* General Rules */
+.App {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+  background-image: url(./background.svg);
+  background-position: center;
+  font-family: "Work Sans", sans-serif;
+}
+
+.hitec-logo {
+  position: absolute;
+  width: 120px;
+  top: 0;
+  left: 0;
+  margin-top: 25px;
+  margin-left: 80px;
+}
+
+footer {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-left: 8px;
+}
+
+.btn-start {
+  position: absolute;
+  bottom: 33%;
+  display: inline-flex;
+  width: 85px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #35abfa;
+  color: white;
+  border-radius: 10px;
+}
