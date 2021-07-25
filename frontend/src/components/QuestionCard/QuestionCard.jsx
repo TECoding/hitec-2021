@@ -108,30 +108,29 @@ const QUESTIONS = [
 
 function QuestionCard() {
     const [currentStep, setCurrentStep] = useState(0);
-
     const currentQuestion = QUESTIONS[currentStep];
 
     // HANDLERS
     const handleQuestionsNavClick = (ev) => {
-        setCurrentStep(ev.target.value)
-        console.log(ev.target.value)
+        setCurrentStep(Number(ev.target.value))
     }
 
     const handleOptionClick = (ev) => {
-        currentQuestion.answerIndex = ev.target.value;
+        currentQuestion.answerIndex = Number(ev.target.value);
+        console.log(currentQuestion)
     }
 
     const handleNextQuestionClick = () => {
-        setCurrentStep(currentStep + 1);
+        setCurrentStep(Number(currentStep) + 1);
     }
 
     const handlePrevQuestionClick = () => {
-        setCurrentStep(currentStep - 1);
+        setCurrentStep(Number(currentStep) - 1);
     }
 
     const questionsNav = QUESTIONS.map((question, i) => {
         return (
-            <button key={"question_" + i + "_nav"} onClick={handleQuestionsNavClick} value={i}>
+            <button className={question.answerIndex != null ? "active" : ""} key={"question_" + i + "_nav"} onClick={handleQuestionsNavClick} value={i}>
                 {i + 1}
             </button>
         )
@@ -139,7 +138,7 @@ function QuestionCard() {
 
     const questionOptions = currentQuestion.options.map((option, i) => {
         return (
-            <button key={"option_" + i} value={i} onClick={handleOptionClick}>
+            <button className={currentQuestion.answerIndex === i ? "active" : ""} key={"option_" + i} value={i} onClick={handleOptionClick}>
                 {currentQuestion.id + " " + option.text}
             </button>
         )
@@ -163,7 +162,9 @@ function QuestionCard() {
             </div>
             {/*--BUTTONS--*/}
             <div>
-                <NavigationButtons handlePrevQuestionClick={handlePrevQuestionClick}
+                <NavigationButtons currentStep={currentStep}
+                                   length={QUESTIONS.length}
+                                   handlePrevQuestionClick={handlePrevQuestionClick}
                                    handleNextQuestionClick={handleNextQuestionClick}/>
             </div>
         </div>

@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
 
-.nav-button {
-  background-color: white; 
-  border: none;
-  color: #676666;
-  padding: 3% 10%;
-  font-size: 32px;
-  font-family: 'Work Sans', sans-serif;
-}
+#nav-buttons  {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
 
-.nav-button:hover {
-  color: #4A90E1;
+  button{
+    background-color: transparent;
+    border: none;
+    color: #676666;
+    padding: 1em 0;
+    font-size: 32px;
+    font-family: 'Work Sans', sans-serif;
+  }
 }
