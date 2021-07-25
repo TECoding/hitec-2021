@@ -106,14 +106,14 @@ function QuestionCard() {
 
     const questionsNav = QUESTIONS.map((question, i) => {
         return (
-            <button key={"question_"+ i +"_nav"} onClick={handleQuestionsNavClick} value={i}>
+            <button key={"question_" + i + "_nav"} onClick={handleQuestionsNavClick} value={i}>
                 {i + 1}
             </button>
         )
     })
 
     const questionOptions = currentQuestion.options.map((option, i) => {
-        return(
+        return (
             <button key={"option_" + i} value={i} onClick={handleOptionClick}>
                 {currentQuestion.id + " " + option.text}
             </button>
@@ -123,24 +123,22 @@ function QuestionCard() {
     return (
         <div className={"QuestionCard"}>
             {/*--NAV--*/}
-            <div>
+            <div className="navigation">
                 {questionsNav}
             </div>
             {/*--QUESTION--*/}
-            <div>
+            <div className="question-content">
                 {/*QUESTION --TEXT--*/}
-                <div>
-                    <h2>{currentQuestion.text}</h2>
-                </div>
+                <h2>{currentQuestion.text}</h2>
                 {/*QUESTION --OPTIONS--*/}
-                <div>
+                <div className={"options-content"}>
                     {questionOptions}
                 </div>
             </div>
             {/*--BUTTONS--*/}
             <div>
                 {currentStep !== 0 ? <p onClick={handlePrevQuestionClick}>Anterior</p> : ""}
-                {currentStep !== QUESTIONS.length -1 ? <p onClick={handleNextQuestionClick}>Siguiente</p> : ""}
+                {currentStep !== QUESTIONS.length - 1 ? <p onClick={handleNextQuestionClick}>Siguiente</p> : ""}
             </div>
         </div>
     );
