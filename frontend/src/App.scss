@@ -37,3 +37,18 @@
   }
 }
 
+/*---------- Navigation buttons ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
+.nav-button {
+  background-color: white; 
+  border: none;
+  color: #676666;
+  padding: 3% 10%;
+  font-size: 32px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.nav-button:hover {
+  color: #4A90E1;
+}
