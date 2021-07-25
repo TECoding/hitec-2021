@@ -11,9 +11,16 @@
 .Inicio .content-wrapper {
   background-color: transparent;
   width: fit-content;
+  margin-top: 25px;
 }
 
 .Inicio .content-wrapper p {
-  font-size: 50px;
+  font-size: max(3.3vw, 25px);
   font-weight: 700;
+}
+
+@media (max-width: 590px) {
+  .Inicio {
+    width: 70%;
+  }
 }
