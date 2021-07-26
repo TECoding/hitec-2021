@@ -1,0 +1,89 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* General Rules */
+.App {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  height: 100vh;
+  margin: 0;
+  background-image: url(./background.svg);
+  background-position: center;
+  background-size: cover;
+  font-family: "Work Sans", sans-serif;
+  color: #ffffff;
+}
+
+.App:before {
+  content: "";
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  background-image: linear-gradient(to bottom right, #4172e2 0%, #15426e 100%);
+}
+
+.hitec-logo {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  margin-top: 30vh;
+}
+
+footer {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-left: 8px;
+}
+
+.btn-start {
+  position: absolute;
+  bottom: 31%;
+  display: inline-flex;
+  width: 85px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #35abfa;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn-start:hover {
+  background-color: #3299df;
+}
+
+@media (max-width: 700px) {
+  .App {
+    background-image: url(./background-resp.svg);
+  }
+
+  .hitec-logo {
+    width: 85px;
+  }
+}

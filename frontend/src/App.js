@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,12 +15,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1>HiTec</h1>
-        <hr />
+        <img src="logo_hitec.svg" alt="hitec" className="hitec-logo"/>
         <Switch>
           <Route path="/" exact>
             <Inicio/>
-            <Link to="/preguntas">Empezar</Link>
+            <Link to="/preguntas" className="btn-start">Iniciar</Link>
           </Route>
           <Route path="/preguntas">
             <Preguntas/>
@@ -30,6 +30,10 @@ function App() {
             <Link to="/">Regresar a Inicio</Link>
           </Route>
         </Switch>
+        <footer>
+          Powered by <img src="logo_tecoding.svg" alt="tecoding" className="footer-logo"/> 
+                      <img src="logo_fetec.svg" alt="fetec" className="footer-logo"/>
+        </footer>
       </div>
     </Router>
   );
