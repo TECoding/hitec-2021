@@ -1,5 +1,4 @@
 import React from 'react';
-import './NavigationButtons.scss';
 
 function NavigationButtons({currentStep, length, handleNavigationButtonsClick}) {
     return (
