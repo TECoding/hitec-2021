@@ -109,7 +109,82 @@ const QUESTIONS = [
         text: "Question 5",
         options: null,
         answerIndex: null,
-    },
+    },{
+        id: 5,
+        text: "Question 6",
+        options: [
+            {
+                text: "Answer 1"
+            },
+            {
+                text: "Answer 2"
+            },
+            {
+                text: "Answer 3"
+            },
+            {
+                text: "Answer 4"
+            },
+            {
+                text: "Answer 5"
+            },
+            {
+                text: "Answer 6"
+            },
+
+        ],
+        answerIndex: null,
+    },{
+        id: 6,
+        text: "Question 7",
+        options: [
+            {
+                text: "Answer 1"
+            },
+            {
+                text: "Answer 2"
+            },
+            {
+                text: "Answer 3"
+            },
+            {
+                text: "Answer 4"
+            },
+            {
+                text: "Answer 5"
+            },
+            {
+                text: "Answer 6"
+            },
+
+        ],
+        answerIndex: null,
+    },{
+        id: 7,
+        text: "Question 8",
+        options: [
+            {
+                text: "Answer 1"
+            },
+            {
+                text: "Answer 2"
+            },
+            {
+                text: "Answer 3"
+            },
+            {
+                text: "Answer 4"
+            },
+            {
+                text: "Answer 5"
+            },
+            {
+                text: "Answer 6"
+            },
+
+        ],
+        answerIndex: null,
+    }
 ];
 
 function QuestionCard() {

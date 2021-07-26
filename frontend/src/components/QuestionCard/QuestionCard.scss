@@ -27,7 +27,6 @@ button {
   .navigation {
     width: 100%;
     margin-bottom: 1em;
-
     display: inline-flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -40,7 +39,6 @@ button {
       border-radius: 50%;
       background: #E8E8E8;
     }
-
   }
 
   .question-content {
@@ -100,6 +98,15 @@ button {
 @media only screen and (max-width: 600px) {
   .QuestionCard {
     width: 100%;
+
+    .navigation {
+      button {
+        height: 100px;
+        font-size: 1.5em;
+        border-radius: 0;
+      }
+
+    }
   }
 }
 
@@ -107,6 +114,22 @@ button {
   .QuestionCard {
     .options-content {
       grid-template-columns: repeat(1, 1fr);
+      button {
+        padding: 1.5em 1em;
+        font-size: 1.25em;
+        border-radius: 25px;
+      }
+    }
+    #nav-buttons {
+      width: 90%;
+      padding: 1em;
+      margin: auto;
+
+      button {
+        font-size: 2em;
+
+      }
+
     }
   }
 }
