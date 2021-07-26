@@ -1,4 +1,3 @@
-//Hola
 import React from 'react';
 import './NavigationButtons.scss';
 
