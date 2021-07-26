@@ -1,81 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
 
+button {
+  transition: all 0.25s;
+  border: none;
+}
+
 .QuestionCard {
   position: absolute;
-  width: 45%;
+  width: 550px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
+  textarea {
+    width: 95%;
+    height: 100px;
+    border-radius: 15px;
+    border: none;
+    padding: 1em 2.5%;
+    background: white;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 250px;
+  }
+
   .navigation {
     width: 100%;
     margin-bottom: 1em;
+
     display: inline-flex;
     justify-content: space-between;
     flex-wrap: nowrap;
 
     button {
-      border: none;
       width: 50px;
       height: 50px;
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.25em;
       border-radius: 50%;
       background: #E8E8E8;
     }
 
   }
 
-  .question-content{
+  .question-content {
     border-radius: 25px;
     box-sizing: border-box;
-    padding: 1em 2em;
+    padding: 1.5em;
     background: #F2F2F2;
 
-    h2{
+    h1 {
       margin: 0.5em 0;
     }
   }
 
-  .options-content{
+  .options-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     grid-gap: 10px;
+    margin-top: 30px;
 
-    button{
-      border: none;
+    button {
       padding: 1em 1em;
       border-radius: 25px;
       background: #FAFAFA;
     }
   }
 
-  button:hover{
+  button:hover {
     background: gray;
-    color:white
+    color: white
   }
 
-  button.active{
+  button.active {
     background: dodgerblue;
     color: white;
   }
 
-  #nav-buttons  {
+  #nav-buttons {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
     padding: 1em 0;
 
-    button{
+    button {
       background-color: transparent;
-      border: none;
       padding: 0;
       color: #676666;
-      font-size: 32px;
+      font-size: 1.5em;
       font-family: 'Work Sans', sans-serif;
     }
 
-    button:hover{
+    button:hover {
       color: dodgerblue;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .QuestionCard {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .QuestionCard {
+    .options-content {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
