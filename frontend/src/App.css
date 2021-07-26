@@ -74,8 +74,28 @@ footer {
   border-radius: 10px;
 }
 
-.btn-start:hover {
+.btn-start:hover,
+.btn-back-to-home:hover {
   background-color: #3299df;
+}
+
+.btn-back-to-home {
+  position: absolute;
+  bottom: 31%;
+  display: inline-flex;
+  width: 120px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #35abfa;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn-back-to-home--resultado {
+  bottom: 34%;
 }
 
 @media (max-width: 700px) {
@@ -85,5 +105,20 @@ footer {
 
   .hitec-logo {
     width: 85px;
+  }
+
+  .btn-back-to-home--resultado {
+    bottom: 31%;
+    width: 100px;
+    height: 30px;
+    font-size: small;
+  }
+}
+
+@media (max-width: 350px) {
+  .btn-back-to-home--resultado {
+    width: 90px;
+    height: 25px;
+    font-size: small;
   }
 }
