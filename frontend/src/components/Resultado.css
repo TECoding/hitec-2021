@@ -1,0 +1,99 @@
+.Resultado {
+  display: inline-flex;
+  background-color: transparent;
+  width: 100%;
+  height: 60%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  /*Group color*/
+  background-color: blueviolet;
+}
+
+.Resultado .content-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Resultado .top-section {
+  padding-top: 3.5%;
+}
+
+.Resultado h1 {
+  font-size: max(2.5vw, 25px);
+  color: #ffffffbb;
+  padding: 0 0 10px 0;
+}
+
+.Resultado h2 {
+  font-size: max(2vw, 20px);
+  padding: 10px 0;
+}
+
+.Resultado .highlight-bar {
+  background-color: rgba(40, 40, 40, 0.25);
+}
+
+.Resultado h3 {
+  padding: 15px 0 5px 0;
+}
+
+.Resultado #group-name {
+  text-transform: uppercase;
+}
+
+.Resultado .description {
+  display: inline-flex;
+  margin-bottom: 0;
+  width: 50%;
+  font-size: max(1.2vw, 14px);
+}
+
+.Resultado .second-results {
+  padding: 10px 0;
+  background-color: #ffffffb9;
+  color: black;
+}
+
+.Resultado .second-results--groups {
+  display: inline-flex;
+}
+
+.Resultado h4 {
+  margin-bottom: 5px;
+  font-size: max(1.15vw, 13px);
+}
+
+.Resultado .second-group-name {
+  padding: 0 40px 0 40px;
+  font-size: max(1.15vw, 13px);
+}
+
+@media (max-width: 700px) {
+  .Resultado .top-section {
+    padding-top: 10%;
+  }
+
+  .Resultado .description {
+    width: 70%;
+  }
+
+  .Resultado .second-group-name {
+    padding: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .Resultado .description {
+    font-size: 12px;
+    width: 80%;
+  }
+}
+
+@media (min-height: 800px) {
+  .Resultado .top-section {
+    padding-top: 25%;
+  }
+}
