@@ -9,6 +9,7 @@ const QUESTIONS = [
         options: [
             {
                 text: "Answer 1"
+
             },
             {
                 text: "Answer 2"
@@ -120,7 +121,7 @@ function QuestionCard() {
 
     useEffect(() => {
         setCurrentAnswer(currentQuestion.answerIndex);
-    })
+    },[currentQuestion.answerIndex])
 
     const handleQuestionsNavClick = (ev) => {
         setCurrentStep(Number(ev.target.value))
@@ -129,7 +130,6 @@ function QuestionCard() {
     const handleOptionClick = (ev) => {
         currentQuestion.answerIndex = Number(ev.target.value);
         setCurrentAnswer(currentQuestion.answerIndex);
-        console.log(currentQuestion)
     }
 
     const handleNavigationButtonsClick = (ev) => {
@@ -137,8 +137,15 @@ function QuestionCard() {
     }
 
     const handleTextareaChange = (ev) => {
-        currentQuestion.answerIndex = ev.target.value !== "" ?  1 : null;
+        currentQuestion.answerIndex = ev.target.value !== "" ? 1 : null;
         setTextAreaAnswer(ev.target.value);
+    }
+
+    const handleSubmit = (ev) => {
+        ev.preventDefault();
+        //TODO: Save answer into DB
+        console.log("Form submitted");
+        console.log(textAreaAnswer);
     }
 
     const questionsNav = QUESTIONS.map((question, i) => {
@@ -181,12 +188,12 @@ function QuestionCard() {
                               onChange={handleTextareaChange}
                               value={textAreaAnswer}/>
                 }
-
             </div>
             {/*--BUTTONS--*/}
             <div>
                 <NavigationButtons currentStep={currentStep}
-                                   length={QUESTIONS.length}
+                                   handleSubmit={handleSubmit}
+                                   questions={QUESTIONS}
                                    handleNavigationButtonsClick={handleNavigationButtonsClick}
                 />
             </div>
