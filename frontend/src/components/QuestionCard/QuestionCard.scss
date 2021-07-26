@@ -101,8 +101,16 @@ button {
   .QuestionCard {
     width: 100%;
 
+    .question-content {
+      border-radius: 0;
+    }
+
     .navigation {
+      flex-grow: 1;
+      margin: 0;
+
       button {
+        width: 12.5%;
         height: 100px;
         font-size: 1.5em;
         border-radius: 0;
@@ -114,14 +122,17 @@ button {
 
 @media only screen and (max-width: 480px) {
   .QuestionCard {
+
     .options-content {
       grid-template-columns: repeat(1, 1fr);
+
       button {
         padding: 1.5em 1em;
         font-size: 1.25em;
         border-radius: 25px;
       }
     }
+
     #nav-buttons {
       width: 90%;
       padding: 1em;
