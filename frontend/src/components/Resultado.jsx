@@ -1,9 +1,13 @@
 import React from "react";
+import { useWindowSize } from "@react-hook/window-size";
+import Confetti from "react-confetti";
 import "./Resultado.css";
 
 const Resultado = () => {
+  const { width, height } = useWindowSize();
   return (
     <div className="Resultado">
+      <Confetti width={width} height={height} numberOfPieces="100" />
       <div className="content-wrapper">
         <div className="top-section">
           <h1>¡Tenemos tus resultados!</h1>
