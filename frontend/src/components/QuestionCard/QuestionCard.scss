@@ -11,6 +11,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: black;
 
   textarea {
     width: 95%;
@@ -81,12 +82,13 @@ button {
     justify-content: space-between;
     padding: 1em 0;
 
+
     button {
       background-color: transparent;
       padding: 0;
-      color: #676666;
       font-size: 1.5em;
       font-family: 'Work Sans', sans-serif;
+      color: white;
     }
 
     button:hover {
