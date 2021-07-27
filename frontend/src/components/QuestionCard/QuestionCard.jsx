@@ -217,7 +217,6 @@ function QuestionCard() {
     }
 
     const handleSubmit = (ev) => {
-        ev.preventDefault();
         //TODO: Save answer into DB
         console.log("Form submitted");
         console.log(textAreaAnswer);

@@ -39,6 +39,7 @@ button {
       font-size: 1.25em;
       border-radius: 50%;
       background: #E8E8E8;
+      box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
     }
   }
 
@@ -47,8 +48,10 @@ button {
     box-sizing: border-box;
     padding: 1.5em;
     background: #F2F2F2;
-
+    text-align: left;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
     h1 {
+      font-size: 1.5em;
       margin: 0.5em 0;
     }
   }
@@ -67,12 +70,12 @@ button {
   }
 
   button:hover {
-    background: gray;
+    background: #b9b9b9;
     color: white
   }
 
   button.active {
-    background: dodgerblue;
+    background: #3A62B1;
     color: white;
   }
 
@@ -82,17 +85,18 @@ button {
     justify-content: space-between;
     padding: 1em 0;
 
-
-    button {
+    button, a {
       background-color: transparent;
       padding: 0;
+      text-decoration: none;
+      font-weight: bold;
       font-size: 1.5em;
-      font-family: 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       color: white;
     }
 
     button:hover {
-      color: dodgerblue;
+      color: #3A62B1;
     }
   }
 }

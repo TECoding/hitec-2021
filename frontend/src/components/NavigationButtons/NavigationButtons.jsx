@@ -1,5 +1,6 @@
 import React from 'react';
-
+import {Link
+} from "react-router-dom";
 function NavigationButtons({currentStep, handleSubmit,questions, handleNavigationButtonsClick}) {
     return (
         <div id={"nav-buttons"}>
@@ -11,7 +12,7 @@ function NavigationButtons({currentStep, handleSubmit,questions, handleNavigatio
                     ? <button onClick={handleNavigationButtonsClick} value={1}>Next {'>'}</button> : ""}
 
                 {questions.every(question => question.answerIndex != null) && currentStep === (questions.length - 1)
-                    ? <button onClick={handleSubmit} value={"Submit"}>Resultados {'>'}</button> : ""}
+                    ? <Link to="/resultado" onClick={handleSubmit}>Resultados {'>'}</Link> : ""}
             </div>
         </div>
     );
