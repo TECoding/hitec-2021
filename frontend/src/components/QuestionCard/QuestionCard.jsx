@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import NavigationButtons from './../NavigationButtons/NavigationButtons.jsx'
-import { createQuestionDocument } from './../../firebase/firebase.utils';
+import { createQuestionDocument } from '../../firebase/firebase.utils';
 import './QuestionCard.scss'
 // Only testing purpose, delete for final build.
 const QUESTIONS = [
