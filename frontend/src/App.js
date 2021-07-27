@@ -3,8 +3,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Inicio from "./components/Inicio";
 import Preguntas from "./components/Preguntas";
