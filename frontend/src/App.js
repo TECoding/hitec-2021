@@ -3,8 +3,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Inicio from "./components/Inicio";
 import Preguntas from "./components/Preguntas";
@@ -17,18 +16,13 @@ function App() {
       <div className="App">
         <Switch>
           <Route path="/" exact>
-            <img src="logo_hitec.svg" alt="hitec" className="hitec-logo"/>
             <Inicio/>
-            <Link to="/preguntas" className="btn-start">Iniciar</Link>
           </Route>
           <Route path="/preguntas">
             <Preguntas/>
-            <Link to="/" className="btn-back-to-home">Ir a Inicio</Link>
-            <Link to="/resultado">Resultado</Link>
           </Route>
           <Route path="/resultado">
             <Resultado/>
-            <Link to="/" className="btn-back-to-home btn-back-to-home--resultado">Ir a Inicio</Link>
           </Route>
         </Switch>
         <footer>
