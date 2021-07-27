@@ -23,12 +23,12 @@ function App() {
           </Route>
           <Route path="/preguntas">
             <Preguntas/>
-            {/*<Link to="/" className="btn-back-to-home">Ir a Inicio</Link>*/}
+            <Link to="/" className="btn-back-to-home">Ir a Inicio</Link>
             <Link to="/resultado">Resultado</Link>
           </Route>
           <Route path="/resultado">
             <Resultado/>
-            {/*<Link to="/" className="btn-back-to-home btn-back-to-home--resultado">Ir a Inicio</Link>*/}
+            <Link to="/" className="btn-back-to-home btn-back-to-home--resultado">Ir a Inicio</Link>
           </Route>
         </Switch>
         <footer>

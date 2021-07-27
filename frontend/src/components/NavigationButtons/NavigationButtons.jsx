@@ -1,6 +1,5 @@
 import React from 'react';
-import {Link
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 function NavigationButtons({currentStep, handleSubmit,questions, handleNavigationButtonsClick}) {
     return (
         <div id={"nav-buttons"}>

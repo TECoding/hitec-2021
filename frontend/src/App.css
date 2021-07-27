@@ -20,7 +20,7 @@
   margin: 0;
   background-image: url(./background.svg);
   background-position: center;
-  background-size: 200%;
+  background-size: cover;
   font-family: "Work Sans", sans-serif;
   color: #ffffff;
 }
