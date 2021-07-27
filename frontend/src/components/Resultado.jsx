@@ -1,6 +1,7 @@
 import React from "react";
 import { useWindowSize } from "@react-hook/window-size";
 import Confetti from "react-confetti";
+import { Link } from "react-router-dom";
 import "./Resultado.css";
 
 const Resultado = () => {
@@ -21,6 +22,11 @@ const Resultado = () => {
             lobortis, euismod odio nec, pretium augue. Morbi quis scelerisque
             dolor, vel rhoncus dui.
           </p>
+        </div>
+        <div>
+          <Link to="/" className="btn btn-back-to-home">
+            Ir a Inicio
+          </Link>
         </div>
         <div className="second-results">
           <h4>Tambien te recomendamos revisar estos grupos</h4>

@@ -14,9 +14,18 @@
   margin-top: 25px;
 }
 
+.Inicio .hitec-logo {
+  width: 100px;
+  margin-bottom: 1.5vh;
+}
+
 .Inicio .content-wrapper p {
   font-size: max(3.3vw, 25px);
   font-weight: 700;
+}
+
+.Inicio .btn-start {
+  margin-top: 1.5vh;
 }
 
 @media (max-width: 590px) {
