@@ -71,6 +71,11 @@
   font-size: max(1.15vw, 13px);
 }
 
+.Resultado .btn-back-to-home {
+  width: 120px;
+  height: 35px;
+}
+
 @media (max-width: 700px) {
   .Resultado .top-section {
     padding-top: 10%;
@@ -89,11 +94,5 @@
   .Resultado .description {
     font-size: 12px;
     width: 80%;
-  }
-}
-
-@media (min-height: 800px) {
-  .Resultado .top-section {
-    padding-top: 25%;
   }
 }
