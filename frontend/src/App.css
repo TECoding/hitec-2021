@@ -101,6 +101,7 @@ footer {
 @media (max-width: 700px) {
   .App {
     background-image: url(./background-resp.svg);
+    background-size: cover;
   }
 
   .hitec-logo {

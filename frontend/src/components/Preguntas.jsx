@@ -1,9 +1,10 @@
 import React from "react";
+import QuestionCard from "./QuestionCard/QuestionCard";
 
 const Preguntas = () => {
   return (
     <div>
-      <h1>Preguntas</h1>
+      <QuestionCard />
     </div>
   );
 };
