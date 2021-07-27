@@ -11,12 +11,28 @@
 .Inicio .content-wrapper {
   background-color: transparent;
   width: fit-content;
-  margin-top: 25px;
+}
+
+.Inicio .hitec-logo {
+  width: 100px;
+  margin-bottom: 1.5vh;
 }
 
 .Inicio .content-wrapper p {
   font-size: max(3.3vw, 25px);
   font-weight: 700;
+  margin-bottom: 5vh;
+}
+
+.Inicio .btn-start {
+  width: 85px;
+  height: 35px;
+}
+
+@media (max-width: 700px) {
+  .Inicio .hitec-logo {
+    width: 85px;
+  }
 }
 
 @media (max-width: 590px) {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap");
 
 button {
   transition: all 0.25s;
@@ -38,7 +38,7 @@ button {
       font-family: "Work Sans", sans-serif;
       font-size: 1.25em;
       border-radius: 50%;
-      background: #E8E8E8;
+      background: #e8e8e8;
     }
   }
 
@@ -46,7 +46,7 @@ button {
     border-radius: 25px;
     box-sizing: border-box;
     padding: 1.5em;
-    background: #F2F2F2;
+    background: #f2f2f2;
 
     h1 {
       margin: 0.5em 0;
@@ -62,13 +62,13 @@ button {
     button {
       padding: 1em 1em;
       border-radius: 25px;
-      background: #FAFAFA;
+      background: #fafafa;
     }
   }
 
   button:hover {
     background: gray;
-    color: white
+    color: white;
   }
 
   button.active {
@@ -82,13 +82,13 @@ button {
     justify-content: space-between;
     padding: 1em 0;
 
-
     button {
       background-color: transparent;
       padding: 0;
       font-size: 1.5em;
-      font-family: 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       color: white;
+      text-shadow: 1px 1px 10px black;
     }
 
     button:hover {
@@ -115,14 +115,12 @@ button {
         font-size: 1.5em;
         border-radius: 0;
       }
-
     }
   }
 }
 
 @media only screen and (max-width: 480px) {
   .QuestionCard {
-
     .options-content {
       grid-template-columns: repeat(1, 1fr);
 
@@ -140,9 +138,7 @@ button {
 
       button {
         font-size: 2em;
-
       }
-
     }
   }
 }

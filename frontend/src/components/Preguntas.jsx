@@ -1,9 +1,11 @@
 import React from "react";
+import QuestionCard from "./QuestionCard/QuestionCard";
+import "./Preguntas.css";
 
 const Preguntas = () => {
   return (
-    <div>
-      <h1>Preguntas</h1>
+    <div className="Preguntas">
+      <QuestionCard />
     </div>
   );
 };

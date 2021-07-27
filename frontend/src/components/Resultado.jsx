@@ -22,6 +22,11 @@ const Resultado = () => {
             dolor, vel rhoncus dui.
           </p>
         </div>
+        <div className="btn-wrapper">
+          <a href="/" className="btn btn-home">
+            Ir a Inicio
+          </a>
+        </div>
         <div className="second-results">
           <h4>Tambien te recomendamos revisar estos grupos</h4>
           <div className="second-results--groups">

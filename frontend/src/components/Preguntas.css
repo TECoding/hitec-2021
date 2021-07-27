@@ -1,0 +1,7 @@
+.Preguntas {
+  display: inline-flex;
+  background-color: transparent;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}

@@ -71,7 +71,16 @@
   font-size: max(1.15vw, 13px);
 }
 
+.Resultado .btn-home {
+  width: 120px;
+  height: 35px;
+}
+
 @media (max-width: 700px) {
+  .Resultado {
+    height: 70%;
+  }
+
   .Resultado .top-section {
     padding-top: 10%;
   }
