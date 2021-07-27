@@ -6,183 +6,252 @@ import './QuestionCard.scss'
 const QUESTIONS = [
     {
         id: 0,
-        text: "Question 1",
+        text: "¿Cuál de estos temas te interesa más?",
         options: [
             {
-                text: "Answer 1"
-
+                text: "Cultura"
             },
             {
-                text: "Answer 2"
+                text: "Deportivos"
             },
             {
-                text: "Answer 3"
+                text: "Liderazgo"
             },
             {
-                text: "Answer 4"
+                text: "Ambiental"
             },
             {
-                text: "Answer 5"
+                text: "Activismo"
             },
             {
-                text: "Answer 6"
+                text: "Político"
+            },
+            {
+                text: "Derechos humanos"
+            },
+            {
+                text: "Internacional"
+            },
+            {
+                text: "Académico"
+            },
+            {
+                text: "Salud"
+            },
+            {
+                text: "Vivencia estudiantil"
             },
 
         ],
         answerIndex: null,
     }, {
         id: 1,
-        text: "Question 2",
+        text: "¿Qué sueles hacer en tu tiempo libre?",
         options: [
             {
-                text: "Answer 1"
+                text: "Actividad física"
             },
             {
-                text: "Answer 2"
+                text: "Gaming"
             },
             {
-                text: "Answer 3"
+                text: "Activismo"
             },
             {
-                text: "Answer 4"
+                text: "Cantar y bailar"
             },
             {
-                text: "Answer 5"
+                text: "Construir"
             },
             {
-                text: "Answer 6"
+                text: "Enseñar"
             },
-
+            {
+                text: "Socializar"
+            },
+            {
+                text: "Aprender"
+            },
         ],
         answerIndex: null
     }, {
         id: 2,
-        text: "Question 3",
+        text: "¿Qué áreas de estudio te interesan más?",
         options: [
             {
-                text: "Answer 1"
+                text: "Ingeniería"
             },
             {
-                text: "Answer 2"
+                text: "Salud"
             },
             {
-                text: "Answer 3"
+                text: "Relaciones públicas"
             },
             {
-                text: "Answer 4"
+                text: "Negocios"
             },
             {
-                text: "Answer 5"
+                text: "Política"
             },
             {
-                text: "Answer 6"
+                text: "Diseño"
             },
 
         ],
         answerIndex: null,
     }, {
         id: 3,
-        text: "Question 4",
+        text: "¿Con qué cualidad te identificas más?",
         options: [
             {
-                text: "Answer 1"
+                text: "Innovador"
             },
             {
-                text: "Answer 2"
+                text: "Creativo"
             },
             {
-                text: "Answer 3"
+                text: "Activo"
             },
             {
-                text: "Answer 4"
+                text: "Ecoconsciente"
             },
             {
-                text: "Answer 5"
+                text: "Participativo"
             },
             {
-                text: "Answer 6"
+                text: "Multicultural"
             },
-
+            {
+                text: "Humanista"
+            },
+            {
+                text: "Estudioso"
+            },
+            {
+                text: "Saludable"
+            },
+            {
+                text: "Extrovertido"
+            },
         ],
         answerIndex: null,
     }, {
         id: 4,
-        text: "Question 5",
-        options: null,
+        text: "¿Con cuál de las siguientes personas te gustaría cenar?",
+        options: [
+            {
+                text: "Michael Jackson"
+            },
+            {
+                text: "Cristiano Ronaldo"
+            },
+            {
+                text: "Gandhi"
+            },
+            {
+                text: "Greta Thunberg"
+            },
+            {
+                text: "Bill Gates"
+            },
+            {
+                text: "Lili Elbe"
+            },
+            {
+                text: "Albert Einstein"
+            },
+            {
+                text: "Dr. House"
+            },
+            {
+                text: "Alan por el mundo"
+            },
+            {
+                text: "Teus (Mascota del Tec)"
+            },
+            {
+                text: "Barack Obama"
+            },
+        ],
         answerIndex: null,
     },{
         id: 5,
-        text: "Question 6",
+        text: "¿Con qué personaje de Disney te identificas más?",
         options: [
             {
-                text: "Answer 1"
+                text: "Mickey Mouse"
             },
             {
-                text: "Answer 2"
+                text: "Mérida (Valiente)"
             },
             {
-                text: "Answer 3"
+                text: "Rayo McQueen"
             },
             {
-                text: "Answer 4"
+                text: "Genio de Aladdín"
             },
             {
-                text: "Answer 5"
+                text: "Wall-E"
             },
             {
-                text: "Answer 6"
+                text: "Moana"
             },
-
+            {
+                text: "Ralph el demoledor"
+            },
+            {
+                text: "Ratatouille"
+            },
+            {
+                text: "Hércules"
+            },
+            {
+                text: "Timón y Pumba"
+            }
         ],
         answerIndex: null,
     },{
         id: 6,
-        text: "Question 7",
-        options: [
-            {
-                text: "Answer 1"
-            },
-            {
-                text: "Answer 2"
-            },
-            {
-                text: "Answer 3"
-            },
-            {
-                text: "Answer 4"
-            },
-            {
-                text: "Answer 5"
-            },
-            {
-                text: "Answer 6"
-            },
-
-        ],
+        text: "¿Que clase de eventos te gustaría vivir?",
+        options: null,
         answerIndex: null,
     },{
         id: 7,
-        text: "Question 8",
+        text: "¿Cuál serie o película te gustaría ver?",
         options: [
             {
-                text: "Answer 1"
+                text: "Grey's Anatomy"
             },
             {
-                text: "Answer 2"
+                text: "Shark Tank"
             },
             {
-                text: "Answer 3"
+                text: "Glee"
             },
             {
-                text: "Answer 4"
+                text: "RuPaul"
             },
             {
-                text: "Answer 5"
+                text: "House of Cards"
             },
             {
-                text: "Answer 6"
+                text: "Down to Earth"
             },
-
+            {
+                text: "En pocas palabras"
+            },
+            {
+                text: "Élite"
+            },
+            {
+                text: "Club de cuervos"
+            },
+            {
+                text: "Rotten"
+            },
+            {
+                text: "Todo el mundo a la mesa"
+            },
         ],
         answerIndex: null,
     }
@@ -234,7 +303,7 @@ function QuestionCard() {
         return (
             <button className={(currentAnswer === i || currentQuestion.answerIndex === i) ? "active" : ""}
                     key={"option_" + i} value={i} onClick={handleOptionClick}>
-                {currentQuestion.id + " " + option.text}
+                {option.text}
             </button>
         )
     }) : null
