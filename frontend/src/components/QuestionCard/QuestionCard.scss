@@ -37,9 +37,23 @@ button {
       height: 50px;
       font-family: "Work Sans", sans-serif;
       font-size: 1.25em;
+      font-weight: bold;
       border-radius: 50%;
+      color: #505050;
+      background: #b9b9b9;
+      box-shadow: 0 5px 1px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    button.active {
       background: #E8E8E8;
-      box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+      color: #3A62B1;
+      transform: scale(1.1);
+
     }
   }
 
@@ -49,7 +63,8 @@ button {
     padding: 1.5em;
     background: #F2F2F2;
     text-align: left;
-    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+
     h1 {
       font-size: 1.5em;
       margin: 0.5em 0;
@@ -66,17 +81,20 @@ button {
       padding: 1em 1em;
       border-radius: 25px;
       background: #FAFAFA;
+      box-shadow: 0 5px 1px 0 rgba(0,0,0,0.05);
     }
-  }
 
-  button:hover {
-    background: #b9b9b9;
-    color: white
-  }
+    button:hover {
+      transform: scale(1.05);
+      background-color: #3A62B1;
+      box-shadow: 0 0 1px 0 rgba(0,0,0,0.05);
+      color: white;
+    }
 
-  button.active {
-    background: #3A62B1;
-    color: white;
+    button.active {
+      background: #3A62B1;
+      color: white;
+    }
   }
 
   #nav-buttons {
@@ -98,6 +116,8 @@ button {
     button:hover {
       color: #3A62B1;
     }
+
+
   }
 }
 
@@ -114,6 +134,7 @@ button {
       margin: 0;
 
       button {
+        box-shadow: none;
         width: 12.5%;
         height: 100px;
         font-size: 1.5em;
@@ -141,6 +162,7 @@ button {
       width: 90%;
       padding: 1em;
       margin: auto;
+
 
       button {
         font-size: 2em;

@@ -20,7 +20,7 @@
   margin: 0;
   background-image: url(./background.svg);
   background-position: center;
-  background-size: cover;
+  background-size: 200%;
   font-family: "Work Sans", sans-serif;
   color: #ffffff;
 }
@@ -101,6 +101,7 @@ footer {
 @media (max-width: 700px) {
   .App {
     background-image: url(./background-resp.svg);
+    background-size: cover;
   }
 
   .hitec-logo {
