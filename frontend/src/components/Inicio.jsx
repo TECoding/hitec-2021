@@ -2,6 +2,10 @@ import React from "react";
 import "./Inicio.css";
 import { Link } from "react-router-dom";
 
+window.onload = function () {
+  window.localStorage.clear();
+};
+
 const Inicio = () => {
   return (
     <div className="Inicio">
