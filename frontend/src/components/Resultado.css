@@ -12,13 +12,14 @@
 
 .Resultado .content-wrapper {
   display: flex;
+  width: 100%;
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .Resultado .top-section {
-  padding-top: 3.5%;
+  padding-top: 2%;
 }
 
 .Resultado h1 {
@@ -46,9 +47,10 @@
 
 .Resultado .description {
   display: inline-flex;
-  margin-bottom: 0;
-  width: 50%;
+  margin-bottom: 5vh;
+  width: 100%;
   font-size: max(1.2vw, 14px);
+  justify-content: center;
 }
 
 .Resultado .second-results {
@@ -74,6 +76,11 @@
 .Resultado .btn-back-to-home {
   width: 120px;
   height: 35px;
+}
+
+.Resultado .link-feria {
+  width: 160px;
+  margin-left: 3vw;
 }
 
 @media (max-width: 700px) {
