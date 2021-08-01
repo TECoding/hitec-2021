@@ -168,6 +168,11 @@ const Resultado = () => {
   // Function call
   let results = getResults(ANSWERS, n, k);
 
+  // Function to redirects to path "/" and reloads
+  function redirectAndRefresh() {
+    window.location.assign("/");
+  }
+
   return (
     <div className="Resultado-Container">
       {window.localStorage.length === 0 ? (
@@ -190,7 +195,11 @@ const Resultado = () => {
               </p>
             </div>
             <div>
-              <Link to="/" className="btn btn-back-to-home">
+              <Link
+                to="/"
+                onClick={redirectAndRefresh}
+                className="btn btn-back-to-home"
+              >
                 Ir a Inicio
               </Link>
               <a
