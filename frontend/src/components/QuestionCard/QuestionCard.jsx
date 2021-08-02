@@ -81,11 +81,11 @@ const QUESTIONS = [
       },
       {
         text: "Gaming",
-        category: "10",
+        category: "0",
       },
       {
         text: "Activismo",
-        category: "4",
+        category: "7",
       },
       {
         text: "Cantar y bailar",
@@ -150,6 +150,10 @@ const QUESTIONS = [
         category: "2",
       },
       {
+        text: "Empático",
+        category: "5",
+      },
+      {
         text: "Creativo",
         category: "0",
       },
@@ -171,7 +175,7 @@ const QUESTIONS = [
       },
       {
         text: "Humanista",
-        category: "5",
+        category: "7",
       },
       {
         text: "Estudioso",
@@ -245,7 +249,7 @@ const QUESTIONS = [
     options: [
       {
         text: "Mickey Mouse",
-        category: "5",
+        category: "2",
       },
       {
         text: "Mérida (Valiente)",
@@ -269,7 +273,7 @@ const QUESTIONS = [
       },
       {
         text: "Ralph el demoledor",
-        category: "10",
+        category: "0",
       },
       {
         text: "Ratatouille",
