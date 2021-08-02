@@ -87,6 +87,10 @@
 }
 
 @media (max-width: 700px) {
+  .Resultado-Container {
+    height: 90%;
+  }
+
   .Resultado .top-section {
     padding-top: 10%;
   }
