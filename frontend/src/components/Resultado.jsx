@@ -83,7 +83,7 @@ const CATEGORIES = [
       "Ingenioso es la cualidad que le viene a la cabeza a las personas cuando tratan de" +
       " describirte. Te alimentas de conocimiento y siempre estás buscando aprender más." +
       " Disfrutas mucho de la lectura y continuamente te haces preguntas sobre las cosas que te" +
-      " rodean. En base a estas cualidades, hemos determinado que esta categoría es la más" +
+      " rodean. Con base en estas cualidades, hemos determinado que esta categoría es la más" +
       " acertada para ti. ¡Te invitamos a unirte a uno de los grupos!",
   },
   {
