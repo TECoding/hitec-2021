@@ -17,88 +17,93 @@ const CATEGORIES = [
     title: "Deportivos y Recreativos",
     color: "#f3a449",
     description:
-      "Enérgico y apasionado son dos de los adjetivos que mejor te describen. Eres una persona un poco" +
-      " distraída," +
-      " pero cuando logras concentrarte en una tarea no hay quién te detenga. Por eso te invitamos a canalizar tu" +
-      " pasión en uno de los grupos estudiantiles de esta categoría.",
+      "Enérgico y apasionado son dos de los adjetivos que mejor te describen. Eres un poco distraído, pero" +
+      " cuando logras concentrarte en una tarea, no hay quién te detenga. Por eso, te invitamos a canalizar" +
+      " tu pasión en uno de los grupos estudiantiles de esta categoría.",
   },
   {
     title: "Desarrollo Profesional y Emprendimiento",
     color: "#fd9b03",
     description:
-      "Eres propositivo por naturaleza, siempre estás buscando innovar y aprovechar lo que rodea. No le" +
-      " temes a los nuevos retos y no te es difícil adaptarte a cosas nuevas. Por estas razones y más, te" +
-      " invitamos a utilizar tu ingenio en alguno de los grupos estudiantiles de esta categoría.",
+      "Eres propositivo por naturaleza, siempre estás buscando innovar y aprovechar lo que te" +
+      " rodea. No le temes a los retos y no te es difícil adaptarte a situaciones nuevas. Por estas" +
+      " razones y más, te invitamos a utilizar tu ingenio en alguno de los grupos estudiantiles de" +
+      " esta categoría.",
   },
   {
     title: "Ecología y Medio Ambiente",
     color: "#fd5d09",
     description:
-      "“Fanático de la naturaleza y sus encantos” es en una forma acertada de describirte. Te preocupas" +
-      " mucho por el bienestar de los demás y siempre tratas de aportar tu granito de arena para hacer de este" +
-      " mundo un lugar mejor. Es por esto que te invitamos a unirte a uno de los grupos estudiantiles de esta" +
-      " categoría.",
+      "“Fanático de la naturaleza y sus encantos” es en una forma acertada de describirte. Te" +
+      " preocupas mucho por el bienestar de los demás y siempre tratas de aportar tu granito de" +
+      " arena para hacer de este mundo un lugar mejor. Es por esto que te invitamos a unirte a uno" +
+      " de los grupos estudiantiles de esta categoría.",
   },
   {
     title: "Gobierno Estudiantil",
     color: "#fd0102",
     description:
-      "Asertivo, organizado y con gran liderazgo. Te sientes cómodo hablando en público y te encanta" +
-      " tomar decisiones. Siempre intentas representar a los tuyos de la mejor manera posible. Así que, si estás" +
-      " leyendo esto, te invitamos a formar parte en uno de los grupos de esta categoría.",
+      "Asertivo, organizado y líder son algunos de los adjetivos que mejor te describen. Te sientes" +
+      " cómodo hablando en público y te encanta tomar decisiones. Siempre intentas representar a" +
+      " los tuyos de la mejor manera posible. Así que, si estás leyendo esto, te invitamos a formar" +
+      " parte en uno de los grupos de esta categoría.",
   },
   {
     title: "Inclusión y Diversidad de Género",
     color: "#dd023f",
     description:
-      "Comprometido, atento y compasivo son algunas palabras que mejor describen a tu ser. Tu grado de" +
-      " empatía con los demás es destacable. Las demás personas te ven a ti como un lugar seguro al cual acudir" +
-      " cuando no se sienten seguros. Por estas y otras razones creemos que los grupos estudiantiles de esta" +
-      " categoría podrían ser de tu agrado.",
+      "Comprometido, atento y compasivo son algunas palabras que mejor describen tu ser. Tu" +
+      " grado de empatía con los demás es destacable. Las demás personas te ven a ti como un" +
+      " lugar seguro al cual acudir cuando no se sienten seguros. Por estas y otras razones" +
+      " creemos que los grupos estudiantiles de esta categoría podrían ser de tu agrado.",
   },
   {
     title: "Lugar de Origen",
     color: "#d91c5c",
     description:
-      "El viajar y experimentar cosas nuevas es lo que le da sentido a tu vida. Te encanta hacer amigos y" +
-      " sueñas con conocer el mundo entero. Conocer acerca de otras culturas y compartir tus experiencias con los" +
-      " demás son dos de las cosas que más disfrutas. Así que, si estás leyendo esto, te invitamos a formar parte" +
-      " de alguno de los grupos estudiantiles de esta categoría.",
+      "El viajar y experimentar cosas nuevas es lo que le da sentido a tu vida. Te encanta hacer" +
+      " amigos y sueñas con conocer el mundo entero. Conocer acerca de otras culturas y" +
+      " compartir tus experiencias con los demás son dos de las cosas que más disfrutas. Así que," +
+      " si estás leyendo esto, te invitamos a formar parte de alguno de los grupos estudiantiles de" +
+      " esta categoría.",
   },
   {
     title: "Política, Ciudadanía y sentido humano",
     color: "#652d90",
     description:
-      "Eres un alma caritativa que se enriquece al ayudar a los demás. Te compadeces por los indefensos y" +
-      " siempre tratas de apoyar sus causas. Cuando te comprometes a mejorar una situación das lo mejor de ti y no" +
-      " hay quién te detenga. Por estas razones te invitamos a formar parte de los grupos estudiantiles que" +
-      " conforman esta categoría.",
+      "Eres un alma caritativa que se enriquece al ayudar a los demás. Te compadeces por los" +
+      " indefensos y siempre tratas de apoyar sus causas. Cuando te comprometes a mejorar una" +
+      " situación das lo mejor de ti y no hay quién te detenga. Es por estas razones que te" +
+      " invitamos a formar parte de los grupos estudiantiles que conforman esta categoría.",
   },
   {
     title: "Programas Académicos",
     color: "#a773aa",
     description:
-      "Ingenioso es la cualidad que le viene a la cabeza a las personas cuando tratan describirte. Te" +
-      " alimentas de conocimiento y siempre estás buscando aprender más. Disfrutas mucho de la lectura y" +
-      " continuamente te haces preguntas acerca de las cosas que te rodean. Con base en estas cualidades, hemos" +
-      " determinado que esta categoría es la más acertada para ti. ¡Te invitamos a unirte a uno de los grupos!",
+      "Ingenioso es la cualidad que le viene a la cabeza a las personas cuando tratan de" +
+      " describirte. Te alimentas de conocimiento y siempre estás buscando aprender más." +
+      " Disfrutas mucho de la lectura y continuamente te haces preguntas sobre las cosas que te" +
+      " rodean. En base a estas cualidades, hemos determinado que esta categoría es la más" +
+      " acertada para ti. ¡Te invitamos a unirte a uno de los grupos!",
   },
   {
     title: "Salud y Bienestar Integral",
     color: "#02b6ee",
     description:
-      "La disciplina y pasión son cualidades que te representan. El conocimiento es sin duda una de tus" +
-      " herramientas más poderosas. Te preocupas por tu salud y bienestar, pero más por el de los demás. Es por" +
-      " esto que creemos que esta categoría es la mejor para ti. ¡Únete a uno de los grupos!",
+      "La disciplina y pasión son cualidades que te representan. El conocimiento es sin duda una" +
+      " de tus herramientas más poderosas. Te preocupas por tu salud y bienestar, pero más por el" +
+      " de los demás. Es por esto, que creemos que esta categoría es la mejor para ti. ¡Únete a uno" +
+      " de los grupos!",
   },
   {
     title: "Vida Estudiantil y Alma Mater",
     color: "#02b3c2",
     description:
       "Te fascina conversar con tus allegados y salir con tus amigos. La convivencia es un pilar" +
-      " fundamental de tu vida, por lo que la pandemia te retó a adaptarte a un nuevo estilo de vida. Disfrutas" +
-      " cada momento al máximo cuando estás acompañado. Por esto y otras razones, creemos que esta categoría es la" +
-      " que más va contigo. ¡Te invitamos a unirte a alguno de estos grupos!",
+      " fundamental de tu vida, por lo que la pandemia te retó a adaptarte a un nuevo estilo de vida." +
+      " Disfrutas cada momento al máximo cuando estás acompañado. Por esto y otras razones," +
+      " creemos que esta categoría es la que más va contigo. ¡Te invitamos a unirte a alguno de" +
+      " estos grupos!",
   },
 ];
 
