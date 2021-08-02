@@ -21,6 +21,7 @@ body {
 /* General Rules */
 .App {
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -46,15 +47,8 @@ body {
 }
 
 footer {
-  position: absolute;
-  display: inline-flex;
-  align-items: flex-end;
-  justify-content: center;
-  bottom: 0;
   font-size: 13px;
   font-weight: 500;
-  height: 100%;
-  z-index: -1;
 }
 
 .footer-wrapper {
