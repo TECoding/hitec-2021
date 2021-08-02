@@ -17,8 +17,10 @@ const ConditionalFooter = (props) => {
   }
   return (
       <footer>
-        Powered by <img src="logo_tecoding.svg" alt="tecoding" className="footer-logo"/>
-        <img src="logo_fetec.svg" alt="fetec" className="footer-logo"/>
+        <div className="footer-wrapper">
+          Powered by <img src="logo_tecoding.svg" alt="tecoding" className="footer-logo"/>
+          <img src="logo_fetec.svg" alt="fetec" className="footer-logo"/>
+        </div>
       </footer>
   )
 }
