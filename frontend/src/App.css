@@ -73,6 +73,9 @@ footer {
   .App {
     background-image: url(./background-resp.svg);
     background-size: cover;
+    position: fixed;
+    height: 93vh;
+    width: 100vw;
   }
 
   .hitec-logo {
