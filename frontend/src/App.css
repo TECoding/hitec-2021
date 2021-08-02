@@ -46,7 +46,7 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   display: inline-flex;
   align-items: center;
   justify-content: center;
